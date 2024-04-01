@@ -4,7 +4,8 @@ const mongoose = require('mongoose');
 const employeeRoutes = require('./routes/employeeRoutes');
 const managerRoutes = require('./routes/managerRoutes');
 
-mongoose.connect('mongodb+srv://Abdullah:Px9QlD3UAvm4djbP@cluster0.bhxugqn.mongodb.net/mydatabase')
+//add your connection string
+mongoose.connect('')
 
 const app = express();
 const PORT =  3000;
@@ -18,3 +19,4 @@ app.use('/managers', managerRoutes);
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
